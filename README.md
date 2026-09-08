@@ -1,7 +1,5 @@
 # Moscow City Guide Backend
 
-Backend API for the Moscow City Guide mobile application.
-
 ## Technologies
 - **Kotlin** & **Ktor** (Server Framework)
 - **PostgreSQL** (Database)
@@ -34,27 +32,6 @@ Backend API for the Moscow City Guide mobile application.
 - `PUT /api/places/{id}`: Update an existing place.
 - `DELETE /api/places/{id}`: Delete a place.
 - `GET /api/admin/stats`: Get dashboard statistics.
-
-## Setup and Running
-
-### 1. Database Setup (Neon.tech)
-1. Create a project on [Neon.tech](https://neon.tech).
-2. Get your connection string.
-3. Use the `init.sql` file provided to seed your database with initial data (or tables will be created automatically on first run).
-
-### 2. Environment Variables
-Set the following environment variables:
-- `DATABASE_URL`: Your PostgreSQL JDBC URL (e.g., `jdbc:postgresql://ep-example.eu-central-1.aws.neon.tech/neondb?sslmode=require`)
-- `DATABASE_USER`: Database username.
-- `DATABASE_PASSWORD`: Database password.
-- `JWT_SECRET`: Secret key for JWT signing.
-
-### 3. Run the Server
-Using Gradle:
-```bash
-./gradlew :server:run
-```
-The server will start at `http://0.0.0.0:8080`.
 
 ## Example Login
 To access admin features, login with the default admin account:
